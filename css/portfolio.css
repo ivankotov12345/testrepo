@@ -1,0 +1,122 @@
+.portfolio-container {
+    margin-top: 49px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio-buttons {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    margin: 21px 0 60px 0;
+    padding: 0;
+    column-gap: 10px;
+}
+
+.portfolio-btn {
+    width: 216px;
+    padding: 13.5px 0;
+    color: #BDAE82;
+    border: 2px solid #BDAE82;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-btn:focus {
+    outline: none;
+}
+
+.portfolio-btn .circle-portfolio {
+    position: absolute;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
+  }
+
+.portfolio-btn.portfolio-btn-black {
+    background-color: #BDAE82;
+    color: #000;
+}
+
+.portfolio-btn:hover {
+    color: #fff;
+}
+
+.portfolio-btn.active {
+    background-color: #BDAE82;
+    color: #000;
+    transition: color .3s ease-in-out;
+}
+
+.portfolio-btn.portfolio-btn-black.active{
+    background-color: #000;
+    color: #BDAE82;
+    border: 2px solid #000;
+}
+
+.portfolio-btn.active:hover {
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+
+.portfolio-images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px 25px;
+}
+
+@media (max-width: 768px) {
+
+    .portfolio-container {
+        margin-top: 110px;
+    }
+
+    .portfolio-section-title {
+        letter-spacing: 1px;
+    }
+
+    .portfolio-line {
+        width: 90px;
+    }
+
+    .portfolio-buttons {
+        margin: 20px 160px;
+        column-gap: 4px;
+        row-gap: 5px;
+        flex-wrap: wrap;
+
+    }
+
+    .portfolio-btn {
+        flex: 1 1 40%
+    }
+
+    .portfolio-images {
+        margin-top: 120px;
+    }
+
+    
+}
+
+@media (max-width: 500px) {
+
+    .portfolio-image {
+        width: 100%;
+    }
+
+    .portfolio-buttons {
+        margin: 0 5px;
+    }
+}
