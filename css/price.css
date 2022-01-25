@@ -1,0 +1,141 @@
+.price-list-container {
+    margin-top: 56px;
+}
+
+.price-item {
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #BDAE82;
+    flex: 1 1 100%;
+}
+
+.price-title {
+    color: #fff;
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 56px;
+    margin: 40px 0 0 0;
+}
+
+.price-title.black {
+    color: #000;
+}
+
+.price.black {
+    color: #000;
+}
+
+.price {
+    font-family: 'Merriweather';
+    font-size: 24px;
+    line-height: 48px;
+    color: #BDAE82;
+    font-weight: 700;
+    margin: 22px 0 20px 0;
+}
+
+.text-price {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    margin: 0;
+}
+
+.text-price.black {
+    color: #000;
+}
+
+.order-shooting-btn {
+    width: 220px;
+    height: 55px;
+    background-color: #BDAE82;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    border: none;
+    margin: 40px 0 40px 0;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.order-shooting-btn:focus {
+    outline: none;
+}
+
+.order-shooting-btn .circle-order {
+    position: absolute;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
+  }
+
+.order-shooting-btn:hover {
+    color: #fff;
+}
+
+.order-shooting-btn.order-shooting-btn-black:hover{
+    background-color: #000;
+    color: #BDAE82;
+}
+
+.price-item-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 16px 20px 0 20px;
+    column-gap: 30px;
+}
+
+@media (max-width: 1024px) {
+
+    .price-list-container {
+        margin-top: 50px;
+    }
+
+    .price-section-title {
+        margin-left: 25px;
+        letter-spacing: 1px;
+    }
+    
+    .price-item-wrapper {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+
+    .price-item {
+        margin-top: 1px;
+        margin: 0 300px;
+    }
+
+    .order-shooting-btn {
+        margin: 39px 0 39px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .price-item {
+        margin: 0 155px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .order-shooting-btn {
+        margin: 40px 5px 40px 5px;
+    }
+
+}
+

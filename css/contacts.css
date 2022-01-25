@@ -1,0 +1,181 @@
+.contacts-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.95fr 1fr;
+    margin-top: 100px;
+}
+
+.contacts-image {
+    background-image: url(../assets/img/contacts/contacts.jpg);
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    display: flex;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.contacts-image.light-theme-contacts {
+    background-image: url(../assets/img/contacts/contactsLight.jpg);
+}
+
+.img-contacts {
+    visibility: hidden;
+}
+
+.contacts-form {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+}
+
+.contacts {
+    border: none;
+    margin-top: 55px;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+.legend {
+    font-family: 'Merriweather';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 80px;
+    color: #BDAE82;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.legend.legend-black {
+    color: #000;
+}
+
+.field {
+    width: 100%;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #BDAE82;
+    margin-bottom: 20px;
+}
+
+.field.field-white {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.field::placeholder {
+    font-family: 'Inter';
+    font-size: 20px;
+    line-height: 40px;
+    color: #BDAE82;
+    padding-left: 17px;
+    text-justify: center;
+}
+
+.field.field-white::placeholder {
+    color: #000;
+}
+
+.message-field {
+    height: 90px;
+    resize: none;
+}
+
+.phone-field {
+    height: 45px;
+}
+
+.message-btn {
+    width: 220px;
+    height: 55px;
+    background-color: #BDAE82;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    border: none;
+    margin: 6px 0 0 0;
+    transition: color .3s ease-in-out;
+    cursor: pointer;
+}
+
+.message-btn.message-btn-white{
+    background-color: #fff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.message-btn.message-btn-white:hover{
+    background-color: #000;
+    color: #BDAE82;
+}
+
+.message-btn:hover {
+    color: #fff;
+}
+
+@media (max-width: 1200px) {
+
+    .contacts {
+        margin-top: 0;
+    }
+    
+    .contacts-image {
+        padding-bottom: 114px;
+        background-position-x: center;
+        background-size: cover;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .contacts-wrapper {
+        margin-top: 81px;
+    }
+
+    .contacts {
+        display: grid;
+        justify-content: center;
+    }
+
+    .contacts-form {
+        grid-column-start: 1;
+    }
+
+    .legend {
+        margin-left: 10px;
+        margin-top: 46px;
+        margin-bottom: 32px;
+        font-size: 32px;
+        justify-self: center;
+    }
+
+   .field {
+        margin-left: 10px;
+        width: 440px;
+    } 
+
+    .message-btn {
+        justify-self: center;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .contacts {
+        padding: 0;
+        margin: 0;
+    }
+
+    .legend {
+        margin: 0;
+    }
+
+   .field {
+    width: 300px;
+    margin-left: 0;
+} 
+}
